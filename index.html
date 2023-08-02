@@ -1,52 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Biodata</title>
+    <title>Contoh Menu Navigasi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            margin: 0;
+            padding: 14px 16px;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Biodata</h1>
-    <table>
-        <tr>
-            <td>Nama:</td>
-            <td>[Afand Fathur Rozi]</td>
-        </tr>
-        <tr>
-            <td>Tempat, Tanggal Lahir:</td>
-            <td>[Ambon 13-01-2006]</td>
-        </tr>
-        <tr>
-            <td>Alamat:</td>
-            <td>[Jatiroto]</td>
-        </tr>
-        <tr>
-            <td>Nomor Telepon:</td>
-            <td>[087782770792]</td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td>[fanzdragneel@gmail.com]</td>
-        </tr>
-    </table>
 
-    <h2>Pendidikan</h2>
-    <table>
-        <tr>
-            <td>[Tingkat Pendidikan]</td>
-            <td>[Nama Institusi]</td>
-            <td>[Tahun [Tahun Masuk] - [Tahun Lulus]</td>
-        </tr>
-        <tr>
-            <td>[SMK]</td>
-            <td>[SMKN 6 Jember]</td>
-            <td> [Tahun [Tahun Masuk[2020] - [Tahun Lulus] [2024]</td>
-        </tr>
-    </table>
-       <h2>Hobi</h2>
-    <ul>
-        <li>[Berenang]</li>
-        <li>[Sepak Bola]</li>
-        <li>[BErmain Game]</li>
-    </ul>
+<div class="navbar">
+    <a href="#home">Beranda</a>
+    <a href="#about">Tentang Kami</a>
+    <div class="dropdown">
+        <button class="dropbtn">Layanan 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#service1">Layanan 1</a>
+            <a href="#service2">Layanan 2</a>
+            <a href="#service3">Layanan 3</a>
+        </div>
+    </div>
+    <a href="#contact">Kontak</a>
+</div>
+
+<h1>Selamat Datang di Website Kami</h1>
+<p>Isi konten website Anda di sini...</p>
+
 </body>
 </html>
-
